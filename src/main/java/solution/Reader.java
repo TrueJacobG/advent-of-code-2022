@@ -8,15 +8,15 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Reader {
-    public Reader(){
+    public Reader() {
 
     }
 
     public List<String> getItems(String fileName) {
         List<String> result = null;
-        try (Stream<String> lines = Files.lines(Paths.get("src/main/java/solution/"+fileName))) {
+        try (Stream<String> lines = Files.lines(Paths.get("src/main/java/solution/" + fileName))) {
             result = lines.collect(Collectors.toList());
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
