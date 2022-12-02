@@ -13,13 +13,13 @@ public class CalorieCounting implements Solution {
 
     Reader reader = new Reader();
 
-    private void part1(List<Integer> calories){
+    private void part1(List<Integer> calories) {
         System.out.printf("Part 1 - solution: %d %n", Collections.max(calories));
     }
 
-    private void part2(List<Integer> calories){
+    private void part2(List<Integer> calories) {
         Collections.sort(calories);
-        System.out.printf("Part 2 - solution: %d %n", calories.get(calories.size()-1) + calories.get(calories.size()-2) + calories.get(calories.size()-3));
+        System.out.printf("Part 2 - solution: %d %n", calories.get(calories.size() - 1) + calories.get(calories.size() - 2) + calories.get(calories.size() - 3));
     }
 
     @Override
@@ -29,14 +29,14 @@ public class CalorieCounting implements Solution {
 
         int index = 0;
         calories.add(0);
-        for(String item : items){
-            if(item.equals("")){
+        for (String item : items) {
+            if (item.equals("")) {
                 index++;
                 calories.add(0);
                 continue;
             }
 
-            calories.set(index, calories.get(index)+Integer.parseInt(item));
+            calories.set(index, calories.get(index) + Integer.parseInt(item));
         }
 
         part1(calories);
