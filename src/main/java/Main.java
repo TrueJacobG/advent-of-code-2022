@@ -1,9 +1,9 @@
 import solution.Solution;
-import solution.day2.RockPaperScissors;
+import solution.day3.Rucksack;
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new RockPaperScissors();
+        Solution solution = new Rucksack();
         solution.solve();
     }
 }
