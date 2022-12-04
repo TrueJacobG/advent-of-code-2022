@@ -42,8 +42,8 @@ public class Rucksack implements Solution {
 
         for (int i = 0; i < backpacks.size(); i += 3) {
             String backpack1 = backpacks.get(i);
-            String backpack2 = backpacks.get(i+1);
-            String backpack3 = backpacks.get(i+2);
+            String backpack2 = backpacks.get(i + 1);
+            String backpack3 = backpacks.get(i + 2);
 
             Set<Character> set = new HashSet<>();
 
@@ -54,13 +54,13 @@ public class Rucksack implements Solution {
             boolean flag = false;
             for (char c1 : backpack2.toCharArray()) {
 
-                if(flag){
+                if (flag) {
                     break;
                 }
 
                 if (set.contains(c1)) {
-                    for(char c2 : backpack3.toCharArray()){
-                        if(c2 == c1){
+                    for (char c2 : backpack3.toCharArray()) {
+                        if (c2 == c1) {
                             sum += getPriorityOfLetter(c1);
                             flag = true;
                             break;
