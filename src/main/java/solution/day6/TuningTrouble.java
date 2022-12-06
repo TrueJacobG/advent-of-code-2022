@@ -30,7 +30,7 @@ public class TuningTrouble implements Solution {
         }
 
         System.out.printf("Part 1 - result: %d %n", index1);
-        System.out.printf("Part 1 - result: %d %n", index2);
+        System.out.printf("Part 2 - result: %d %n", index2);
 
     }
 
