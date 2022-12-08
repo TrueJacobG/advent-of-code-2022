@@ -1,9 +1,9 @@
 import solution.Solution;
-import solution.day7.NoSpace;
+import solution.day8.Treetop;
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new NoSpace();
+        Solution solution = new Treetop();
         solution.solve();
     }
 }
