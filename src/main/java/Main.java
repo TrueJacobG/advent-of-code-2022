@@ -1,9 +1,9 @@
 import solution.Solution;
-import solution.day8.Treetop;
+import solution.day9.Rope;
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Treetop();
+        Solution solution = new Rope();
         solution.solve();
     }
 }
