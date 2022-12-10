@@ -1,9 +1,9 @@
 import solution.Solution;
-import solution.day9.Rope;
+import solution.day10.Tube;
 
 public class Main {
     public static void main(String[] args) {
-        Solution solution = new Rope();
+        Solution solution = new Tube();
         solution.solve();
     }
 }
