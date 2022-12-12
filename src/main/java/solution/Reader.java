@@ -14,6 +14,7 @@ public class Reader {
 
     public List<String> getItems(String fileName) {
         List<String> result = null;
+
         try (Stream<String> lines = Files.lines(Paths.get("src/main/java/solution/" + fileName))) {
             result = lines.collect(Collectors.toList());
         } catch (IOException e) {
